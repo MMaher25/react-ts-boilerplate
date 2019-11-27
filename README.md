@@ -1,6 +1,6 @@
 # react-ts-boilerplate
 
-A simpleo boilerplate for building a React app in TypeScript.
+A simple boilerplate for building a React app in TypeScript.
 
 ## Building and running on localhost
 
