@@ -1,15 +1,15 @@
 
 import * as React from 'react';
 import { hot } from "react-hot-loader/root";
-interface Props {
+interface IProps {
   name: string
 }
 
-class App extends React.Component<Props> {
-  render() {
-    const { name } = this.props;
-    return <div>Hello {name}</div>;
-  }
+const App = (props: IProps) => {
+  const { name } = props;
+  return (
+    <div>Hello {name}</div>
+  )
 }
 
 export default hot(App);
