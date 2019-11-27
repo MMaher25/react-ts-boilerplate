@@ -2,7 +2,7 @@ import React, { useContext, Fragment } from 'react'
 import { Store } from '../Store/Store'
 import { fetchDataAction } from '../Actions/Actions'
 
-export default function Pokemon() {
+const Pokemon: React.FC = (): JSX.Element => {
   const { state, dispatch } = useContext(Store)
   const { pokemon } = state
 
@@ -20,3 +20,5 @@ export default function Pokemon() {
     </div>
   )
 }
+
+export default Pokemon

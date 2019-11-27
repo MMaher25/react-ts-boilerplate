@@ -26,7 +26,7 @@ export const initialState: IState = {
 
 export const Store = createContext<IState | any>(initialState)
 
-export function StoreProvider({ children }: JSX.ElementChildrenAttribute): JSX.Element {
+export const StoreProvider = ({ children }: JSX.ElementChildrenAttribute): JSX.Element => {
   const [state, dispatch] = useReducer(reducer, initialState)
   return <Store.Provider value={{ state, dispatch }}>{children}</Store.Provider>
 }

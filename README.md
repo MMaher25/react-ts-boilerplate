@@ -1,6 +1,6 @@
 # react-ts-boilerplate
 
-A simple boilerplate for building a React app in TypeScript.
+A simple boilerplate for building a React app in TypeScript using modern React hooks.
 
 ## Building and running on localhost
 
@@ -10,7 +10,7 @@ First install dependencies:
 npm install
 ```
 
-To run in hot module reloading mode:
+To run in hot module reloading mode accessible on port 8080:
 
 ```sh
 npm start
@@ -30,4 +30,4 @@ npm run build-dev
 
 ## Running
 
-Open the file `dist/index.html` in your browser
+When running hot module reloading, visit localhost:8080. Otherwise, open the file `dist/index.html` in your browser
