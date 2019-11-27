@@ -46,6 +46,10 @@ const config = {
             }
           }
         ]
+      },
+      {
+        test: /\.jpe?g$|\.ico$|\.gif$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+        loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
       }
     ]
   },
@@ -68,6 +72,8 @@ const config = {
         template: require('html-webpack-template'),
         inject: false,
         appMountId: 'app',
+        favicon: './assets/images/favicon.ico',
+        title: 'React TS Hooks Boilerplate',
       })
   ],
   optimization: {
