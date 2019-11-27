@@ -1,6 +1,6 @@
-# empty-project
+# react-ts-boilerplate
 
-Empty project.
+A simpleo boilerplate for building a React app in TypeScript.
 
 ## Building and running on localhost
 
@@ -31,7 +31,3 @@ npm run build-dev
 ## Running
 
 Open the file `dist/index.html` in your browser
-
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
