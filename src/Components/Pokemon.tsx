@@ -9,7 +9,7 @@ const Pokemon: React.FC = (): JSX.Element => {
   return (
     <div className="flex-item">
       <div>
-        <img src={pokemon.sprites.front_default} />
+        <img src={pokemon.sprites.front_default} id="image"/>
       </div>
       <div>
         {pokemon.name.toUpperCase()} #{pokemon.id}
