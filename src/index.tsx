@@ -1,9 +1,14 @@
 import * as React from 'react';
 import * as ReactDOM from "react-dom";
+import { StoreProvider } from './Store/Store'
 
-import App from './app';
-import "./Styles/styles.css";
+import App from './App';
+import './Styles/Styles.css';
 
 const mountNode = document.getElementById("app");
 
-ReactDOM.render(<App name="Butt" />, mountNode);
+ReactDOM.render(
+  <StoreProvider>
+    <App />
+  </StoreProvider>
+  , mountNode);
