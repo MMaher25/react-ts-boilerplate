@@ -1,7 +1,8 @@
 import { Dispatch } from '../Interfaces/Interfaces'
 
 export const fetchDataAction = async (dispatch: Dispatch) => {
-  const data = await fetch('https://cat-fact.herokuapp.com/facts/random')
+  const randomNum = Math.floor(Math.random() * 807) + 1 
+  const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomNum}`)
   const dataJSON = await data.json()
   return dispatch({
     type: 'FETCH_DATA',

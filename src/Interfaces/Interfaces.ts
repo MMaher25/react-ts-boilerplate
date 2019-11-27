@@ -1,7 +1,7 @@
 export type Dispatch = React.Dispatch<IAction>
 
 export interface IState {
-  catFact: ICatFact
+  pokemon: IPokemon
 }
 
 export interface IAction {
@@ -9,14 +9,22 @@ export interface IAction {
   payload: any
 }
 
-export interface ICatFact {
-  used: boolean
-  source: string
-  type: string
-  deleted: boolean
-  _id: string
-  __v: number
-  text: string
-  updatedAt: string
-  createdAt: string
+export interface IPokemon {
+  abilities: []
+  base_experience: number
+  forms: []
+  game_indices: []
+  height: number
+  held_items: []
+  id: number
+  is_default: boolean
+  location_area_encounters: string
+  moves: []
+  name: string
+  order: number
+  species: []
+  sprites: []
+  stats: []
+  types: []
+  weight: number
 }

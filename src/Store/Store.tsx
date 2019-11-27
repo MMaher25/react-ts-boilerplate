@@ -3,16 +3,24 @@ import { IState } from '../Interfaces/Interfaces'
 import { reducer } from '../Reducers/Reducers'
 
 export const initialState: IState = {
-  catFact: {
-    used: false,
-    source: '',
-    type: '',
-    deleted: false,
-    _id: '',
-    __v: 0,
-    text: 'Loading',
-    updatedAt: '',
-    createdAt: '',
+  pokemon: {
+    abilities: [],
+    base_experience: 0,
+    forms: [],
+    game_indices: [],
+    height: 0,
+    held_items: [],
+    id: 0,
+    is_default: false,
+    location_area_encounters: '',
+    moves: [],
+    name: '',
+    order: 0,
+    species: [],
+    sprites: [],
+    stats: [],
+    types: [],
+    weight: 0,
   }
 }
 
