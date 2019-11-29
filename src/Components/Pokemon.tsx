@@ -1,4 +1,4 @@
-import React, { useContext, Fragment } from 'react'
+import React, { useContext } from 'react'
 import { Store } from '../Store/Store'
 import { fetchDataAction } from '../Actions/Actions'
 

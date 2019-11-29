@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, Suspense } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { hot } from 'react-hot-loader/root';
 import { Store } from './Store/Store'
 import { fetchDataAction } from './Actions/Actions'
