@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pokemon component Matches the snapshot 1`] = `
+<div
+  className="flex-item"
+>
+  <div>
+    <img
+      id="image"
+    />
+  </div>
+  <div
+    id="pokemon-name"
+  >
+    
+     #
+    0
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Get Random Pokemon
+  </button>
+</div>
+`;

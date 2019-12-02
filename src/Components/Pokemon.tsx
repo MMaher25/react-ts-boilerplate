@@ -11,7 +11,7 @@ const Pokemon: React.FC = (): JSX.Element => {
       <div>
         <img src={pokemon.sprites.front_default} id="image"/>
       </div>
-      <div>
+      <div id="pokemon-name">
         {pokemon.name.toUpperCase()} #{pokemon.id}
       </div>
       <button onClick={() => fetchDataAction(dispatch)}>

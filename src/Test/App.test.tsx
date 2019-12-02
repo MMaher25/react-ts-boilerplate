@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from '../App';
+import { StoreProvider } from '../Store/Store';
+import { create } from 'react-test-renderer';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe("App component", () => {
+  test("Matches the snapshot", () => {
+    const app = create(<StoreProvider><App /></StoreProvider>);
+    expect(app.toJSON()).toMatchSnapshot();
+  });
 });

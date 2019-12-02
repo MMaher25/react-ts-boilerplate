@@ -1,4 +1,5 @@
 import { Dispatch } from '../Interfaces/Interfaces'
+import fetch from 'cross-fetch';
 
 export const fetchDataAction = async (dispatch: Dispatch) => {
   const randomNum = Math.floor(Math.random() * 807) + 1 
