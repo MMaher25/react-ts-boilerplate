@@ -3,16 +3,16 @@ import Pokemon from '../Components/Pokemon';
 import { StoreProvider } from '../Store/Store';
 import { create, act } from 'react-test-renderer';
 
+const pokemon = create(<StoreProvider><Pokemon /></StoreProvider>);
+
 describe("Pokemon component", () => {
-  test("Matches the snapshot", () => {
-    const pokemon = create(<StoreProvider><Pokemon /></StoreProvider>);
+  it("Matches the snapshot", () => {
     expect(pokemon.toJSON()).toMatchSnapshot();
   });
 });
 
 describe("Pokemon component", () => {
-  test("it shows a random Pokemon when clicked", async () => {
-    const pokemon = create(<StoreProvider><Pokemon /></StoreProvider>);
+  it("it shows a random Pokemon when clicked", async () => {
     const instance = pokemon.root;
     const button = instance.findByType("button");
     const nameDiv = instance.findByProps({id: 'pokemon-name'});

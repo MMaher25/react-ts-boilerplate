@@ -3,9 +3,10 @@ import App from '../App';
 import { StoreProvider } from '../Store/Store';
 import { create } from 'react-test-renderer';
 
+const app = create(<StoreProvider><App /></StoreProvider>);
+
 describe("App component", () => {
-  test("Matches the snapshot", () => {
-    const app = create(<StoreProvider><App /></StoreProvider>);
+  it("Matches the snapshot", () => {
     expect(app.toJSON()).toMatchSnapshot();
   });
 });

@@ -2,9 +2,10 @@ import React from 'react';
 import { StoreProvider } from '../Store/Store';
 import { create } from 'react-test-renderer';
 
+const storeProvider = create(<StoreProvider><div></div></StoreProvider>);
+
 describe("StoreProvider component", () => {
-  test("Matches the snapshot", () => {
-    const storeProvider = create(<StoreProvider><div></div></StoreProvider>);
+  it("Matches the snapshot", () => {
     expect(storeProvider.toJSON()).toMatchSnapshot();
   });
 });
